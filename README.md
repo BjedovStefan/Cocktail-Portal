@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Cocktail Portal - react based application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application is meant to be cocktail recepie catalog where the user can type in the desired cocktail name or category and it will output all records from the API provided by https://www.thecocktaildb.com/
+
+After the user types the name or category of the cocktail, the application requests the data from www.thecocktaildb.com/api/json/v1/1/ and gets all the response in JSON format. Each result is displayed as a card for the user to choose. 
+Besides cocktail name and category, the response also returns the ingredients and instructions for cocktail based on it's ID, and when the user choses (click) on certain cocktail card it displays that data in the modal window. 
+
+## Additional Libraries
+
+1. axios
+2. react-debounce-input
+3. react-dom
+4. react-scripts
+
+The app uses all libraries that are included in npm package manager, so if there is a need to install some package manually, simply run
+```
+npm i <package-name> or npm install <package-name>
+or
+yarn add <package-name>
+```
 
 ## Available Scripts
 
@@ -8,36 +25,16 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs on PORT 3001
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in the development mode.
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
-### `npm test`
+The page will reload when you type a new search parameter in search field or go to the selected page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Getting Started with Create React App
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Learn More
 
